@@ -1,9 +1,17 @@
 import { motion } from "framer-motion";
-import { Download, Shield, Cpu, Zap } from "lucide-react";
+import { useState } from "react";
+import { Download, Shield, Cpu, Zap, Box } from "lucide-react";
+import SetupGuide from "./SetupGuide";
 
 const HeroSection = () => {
+  const [isSetupOpen, setIsSetupOpen] = useState(false);
+  
+  const handleDownload = () => {
+    setIsSetupOpen(true);
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-center pt-24 px-4 overflow-hidden border-b border-primary/5">
       {/* Grid background */}
       <div className="absolute inset-0 grid-bg opacity-30" />
       
@@ -61,6 +69,7 @@ const HeroSection = () => {
              <a 
               href="/test.zip" 
               download
+              onClick={handleDownload}
               className="px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full hover:scale-105 transition-all duration-300 hover:shadow-[0_0_30px_rgba(155,135,245,0.6)] flex items-center gap-2 group"
              >
                 <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
@@ -81,6 +90,8 @@ const HeroSection = () => {
           </div>
         </motion.div>
       </div>
+
+      <SetupGuide isOpen={isSetupOpen} onClose={() => setIsSetupOpen(false)} />
     </section>
   );
 };
