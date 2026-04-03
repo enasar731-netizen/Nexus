@@ -6,9 +6,7 @@ const features = [
   { icon: Crosshair, title: "Advanced Aimbot", desc: "FOV Circle with custom smoothing for natural aim" },
   { icon: Target, title: "Bone Selection", desc: "Target Head, Torso, or custom bone for precision" },
   { icon: Save, title: "Config System", desc: "Save, Load & Auto-save your perfect settings" },
-  { icon: Rabbit, title: "Auto Bunny Hop", desc: "Smooth BHOP for faster movement and strafing" },
   { icon: Settings, title: "ImGui Menu", desc: "Beautiful overlay menu with INSERT toggle" },
-  { icon: Gauge, title: "FPS Unlocker", desc: "Remove frame cap for buttery smooth gameplay" },
   { icon: Bone, title: "Skeleton ESP", desc: "Full bone structure rendering with distance fade" },
 ];
 
