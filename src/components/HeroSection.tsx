@@ -17,7 +17,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-7xl md:text-9xl font-black tracking-tighter text-gradient mb-4">
+          <h1 className="text-6xl sm:text-7xl md:text-9xl font-black tracking-tighter text-gradient mb-4">
             NEXUS
           </h1>
         </motion.div>
