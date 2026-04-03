@@ -45,10 +45,10 @@ const FAQItem = ({ question, answer, icon: Icon, index }: any) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 10 }}
+      initial={{ opacity: 0, y: 5 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ delay: index * 0.1 }}
+      transition={{ duration: 0.2 }}
       className="mb-4"
     >
       <button
@@ -76,10 +76,10 @@ const FAQItem = ({ question, answer, icon: Icon, index }: any) => {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden"
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            className="overflow-hidden will-change-[height,opacity]"
           >
-            <div className="p-6 pt-2 text-muted-foreground leading-relaxed text-base border-x border-b border-white/5 mx-4 rounded-b-2xl bg-white/[0.02]">
+            <div className="p-6 pt-2 text-muted-foreground leading-relaxed text-sm md:text-base border-x border-b border-white/5 mx-4 rounded-b-2xl bg-white/[0.01]">
               {answer}
             </div>
           </motion.div>
