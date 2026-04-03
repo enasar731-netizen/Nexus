@@ -15,10 +15,9 @@ const FooterSection = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">Ready to Dominate?</h2>
           
-          <a href="#" className="glow-button text-lg inline-flex items-center gap-2 mb-8">
-            <Download className="w-5 h-5" />
-            Download Nexus
-          </a>
+          <span className="glow-button text-lg inline-flex items-center gap-2 opacity-70 cursor-not-allowed mb-8">
+            Coming Soon
+          </span>
           
           <div className="glass-card p-4 flex items-center gap-3 text-sm text-muted-foreground mb-8">
             <AlertTriangle className="w-4 h-4 text-yellow-500 shrink-0" />
