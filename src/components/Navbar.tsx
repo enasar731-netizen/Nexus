@@ -119,7 +119,7 @@ const Navbar = () => {
                 </motion.a>
               ))}
               <div className="w-12 h-1 bg-primary/20 rounded-full" />
-              <span className="text-sm font-mono text-primary animate-pulse">Running Nexus v.1.0.4</span>
+              <span className="text-sm font-mono text-primary animate-pulse">Nexus</span>
             </div>
           </motion.div>
         )}
