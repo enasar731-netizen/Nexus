@@ -19,11 +19,6 @@ const FooterSection = () => {
             Coming Soon
           </span>
           
-          <div className="glass-card p-4 flex items-center gap-3 text-sm text-muted-foreground mb-8">
-            <AlertTriangle className="w-4 h-4 text-yellow-500 shrink-0" />
-            <span>Use at your own risk &bull; Alt accounts recommended</span>
-          </div>
-          
           <a href="#" className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
             <MessageCircle className="w-4 h-4" />
             Join our Discord
@@ -31,8 +26,9 @@ const FooterSection = () => {
         </motion.div>
       </div>
       
-      <div className="mt-20 text-center text-muted-foreground/40 text-xs">
-        &copy; 2026 Nexus. All rights reserved.
+      <div className="mt-20 text-center text-muted-foreground/40 text-xs space-y-1">
+        <p>&copy; 2026 Nexus. All rights reserved.</p>
+        <p>Use at your own risk &bull; Alt accounts recommended</p>
       </div>
     </section>
   );
