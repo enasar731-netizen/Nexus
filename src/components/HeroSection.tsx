@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Download, Shield, Cpu, Zap, Box } from "lucide-react";
+import { Download, Shield, Cpu, Zap, Box, Key } from "lucide-react";
 import SetupGuide from "./SetupGuide";
 
 const HeroSection = () => {
@@ -33,11 +33,16 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
         >
-          <h1 className="text-6xl sm:text-7xl md:text-9xl font-black tracking-tighter text-gradient mb-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+            <Key className="w-3 h-3" />
+            Status: Private Beta (Key Required)
+          </div>
+          <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-6 text-gradient">
             NEXUS
           </h1>
         </motion.div>
@@ -83,10 +88,16 @@ const HeroSection = () => {
              </button>
           </div>
           
-          <div className="flex items-center justify-center gap-6 text-muted-foreground text-sm">
-            <span className="flex items-center gap-1.5"><Shield className="w-3.5 h-3.5 text-primary" /> Undetected</span>
-            <span className="flex items-center gap-1.5"><Cpu className="w-3.5 h-3.5 text-primary" /> External</span>
-            <span className="flex items-center gap-1.5"><Zap className="w-3.5 h-3.5 text-primary" /> Performance</span>
+          <div className="flex flex-col items-center gap-6 mt-4">
+            <p className="text-xs text-muted-foreground/60 tracking-wider uppercase font-medium">
+              * Authentication Key required for activation
+            </p>
+            
+            <div className="flex items-center justify-center gap-6 text-muted-foreground text-sm">
+              <span className="flex items-center gap-1.5"><Shield className="w-3.5 h-3.5 text-primary" /> Undetected</span>
+              <span className="flex items-center gap-1.5"><Cpu className="w-3.5 h-3.5 text-primary" /> External</span>
+              <span className="flex items-center gap-1.5"><Zap className="w-3.5 h-3.5 text-primary" /> Performance</span>
+            </div>
           </div>
         </motion.div>
       </div>
