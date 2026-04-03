@@ -6,8 +6,7 @@ const benefits = [
   "Advanced Aimbot with Smoothing",
   "Skeleton & Bone Selection",
   "Configuration Save/Load System",
-  "Clean ImGui Overlay Menu",
-  "24/7 Discord Support",
+  "Clean Overlay Menu",
 ];
 
 const requirements = [
@@ -35,14 +34,14 @@ const PricingSection = () => {
           <p className="text-muted-foreground text-lg">Transparent pricing. Clear technical standards.</p>
         </motion.div>
         
-        <div className="grid lg:grid-cols-5 gap-8 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 items-start max-w-4xl mx-auto">
           {/* Main Pricing Card */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="lg:col-span-3 glass-card-glow p-10 h-full flex flex-col"
+            className="glass-card-glow p-10 h-full flex flex-col"
           >
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-foreground mb-2">Nexus Beta</h3>
@@ -61,15 +60,12 @@ const PricingSection = () => {
               ))}
             </div>
             
-            <div className="space-y-4">
-               <button className="glow-button w-full py-4 text-lg font-bold flex items-center justify-center gap-2 opacity-70 cursor-not-allowed">
-                  Coming Soon
-               </button>
-               <p className="text-xs text-center text-muted-foreground/60 flex items-center justify-center gap-1.5">
-                  <Heart className="w-3 h-3 text-red-500" />
-                  Supporting the community since 2026.
-               </p>
-            </div>
+             <div className="space-y-4">
+                <p className="text-xs text-center text-muted-foreground/60 flex items-center justify-center gap-1.5">
+                   <Heart className="w-3 h-3 text-red-500" />
+                   Supporting the community since 2026.
+                </p>
+             </div>
           </motion.div>
 
           {/* Technical Requirements Card */}
@@ -78,7 +74,7 @@ const PricingSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="lg:col-span-2 glass-card p-8 h-full flex flex-col border-primary/10"
+            className="glass-card p-8 h-full flex flex-col border-primary/10"
           >
             <h3 className="text-xl font-bold text-foreground mb-6 flex items-center gap-2">
                <Settings2 className="w-5 h-5 text-primary" />
