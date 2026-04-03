@@ -26,7 +26,7 @@ const Terms = () => {
             <Scale className="text-primary w-8 h-8" />
             Terms of Service
           </h1>
-          <p className="text-sm text-muted-foreground mb-12">Last Updated: April 3, 2026</p>
+          <p className="text-sm text-muted-foreground mb-12">Last Updated: April 4, 2026</p>
 
           <div className="space-y-12 leading-relaxed">
             <section>

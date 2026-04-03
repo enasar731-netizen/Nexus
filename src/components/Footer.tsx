@@ -5,6 +5,7 @@ import { MessageCircle } from "lucide-react";
 const Footer = () => {
   const location = useLocation();
   const isTermsPage = location.pathname === "/terms";
+  const isPrivacyPage = location.pathname === "/privacy";
 
   return (
     <footer className="relative py-12 px-4 border-t border-primary/10">
@@ -31,10 +32,22 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-1 text-center text-muted-foreground/60">
           <p className="text-sm tracking-tight">&copy; 2026 Nexus. All rights reserved.</p>
           <p className="text-sm tracking-tight">Use at your own risk.</p>
-          {!isTermsPage && (
-             <Link to="/terms" className="text-[10px] font-medium uppercase tracking-[0.3em] hover:text-primary transition-colors cursor-pointer mt-3 opacity-50 hover:opacity-100 transition-opacity">
-               Terms of Service
-             </Link>
+          {(!isTermsPage || !isPrivacyPage) && (
+            <div className="flex items-center gap-3 mt-3">
+              {!isTermsPage && (
+                <Link to="/terms" className="text-[10px] font-medium uppercase tracking-[0.3em] hover:text-primary transition-colors cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+                  Terms of Service
+                </Link>
+              )}
+              {!isTermsPage && !isPrivacyPage && (
+                <span className="w-1 h-1 rounded-full bg-muted-foreground/30" />
+              )}
+              {!isPrivacyPage && (
+                <Link to="/privacy" className="text-[10px] font-medium uppercase tracking-[0.3em] hover:text-primary transition-colors cursor-pointer opacity-50 hover:opacity-100 transition-opacity">
+                  Privacy Policy
+                </Link>
+              )}
+            </div>
           )}
         </div>
         
