@@ -105,26 +105,10 @@ const PricingSection = () => {
           </motion.div>
         </div>
         
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-12 opacity-40 grayscale hover:grayscale-0 transition-all duration-500">
-           <div className="flex items-center gap-2 font-mono text-sm tracking-widest uppercase"><ShieldCheck className="w-5 h-5"/> Verified External</div>
-           <div className="flex items-center gap-2 font-mono text-sm tracking-widest uppercase"><Zap className="w-5 h-5"/> Zero Latency</div>
         </div>
-
-        <div className="mt-20 text-center text-muted-foreground/40 text-xs space-y-4">
-          <div>
-            <a href="#" className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm mb-4">
-              <MessageCircle className="w-4 h-4" />
-              Join our Discord
-            </a>
-          </div>
-          <div>
-            <p>&copy; 2026 Nexus. All rights reserved.</p>
-            <p>Use at your own risk.</p>
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
+
 
 export default PricingSection;

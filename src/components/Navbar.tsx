@@ -6,6 +6,7 @@ const links = [
   { name: "Features", href: "#features" },
   { name: "Why Nexus", href: "#why-nexus" },
   { name: "Pricing", href: "#pricing" },
+  { name: "FAQ", href: "#faq" },
 ];
 
 const Navbar = () => {
@@ -78,6 +79,7 @@ const Navbar = () => {
 
           <div className="flex items-center gap-4">
              <span className="hidden sm:inline-block text-xs font-mono py-1 px-3 bg-primary/10 text-primary border border-primary/20 rounded-full">Beta</span>
+
              
              {/* Mobile Toggle */}
              <button 
