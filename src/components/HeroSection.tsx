@@ -46,10 +46,9 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="flex flex-col items-center gap-6"
         >
-          <a href="#download" className="glow-button text-lg flex items-center gap-2">
-            <Download className="w-5 h-5" />
-            Download Now
-          </a>
+          <span className="glow-button text-lg flex items-center gap-2 opacity-70 cursor-not-allowed">
+            Coming Soon
+          </span>
           
           <div className="flex items-center gap-6 text-muted-foreground text-sm">
             <span className="flex items-center gap-1.5"><Shield className="w-3.5 h-3.5 text-primary" /> Undetected</span>
