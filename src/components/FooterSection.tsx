@@ -28,7 +28,7 @@ const FooterSection = () => {
       
       <div className="mt-20 text-center text-muted-foreground/40 text-xs space-y-1">
         <p>&copy; 2026 Nexus. All rights reserved.</p>
-        <p>Use at your own risk &bull; Alt accounts recommended</p>
+        <p>Use at your own risk.</p>
       </div>
     </section>
   );
