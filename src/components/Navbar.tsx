@@ -44,7 +44,7 @@ const Navbar = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             <img 
-              src="/faviconNoBg.png" 
+              src="/no_back.png" 
               alt="Nexus Logo" 
               className="w-7 h-7 object-contain group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(155,135,245,0.4)] transition-all duration-300"
             />
