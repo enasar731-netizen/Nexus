@@ -4,6 +4,16 @@ import { ChevronDown, HelpCircle, Shield, Cpu } from "lucide-react";
 
 const faqs = [
   {
+    question: "What is the primary purpose of Nexus?",
+    answer: "Nexus is a dedicated research and analytical framework designed for the study of external overlays and memory interface techniques. It is developed entirely for educational use and technical study of process interaction.",
+    icon: Shield
+  },
+  {
+    question: "How safe is my account when using Nexus?",
+    answer: "As a 100% external utility, Nexus never modifies game files or memory. While our technology is designed with the highest security standards, use of any third-party framework in a multiplayer environment is entirely at your own discretion. Users assume all responsibility and risk for their account safety.",
+    icon: Shield
+  },
+  {
     question: "Is Nexus currently undetected?",
     answer: "Yes, Nexus is built as a 100% external overlay. Unlike internal exploits that inject code directly into the game memory, Nexus reads data from an external process, making it much harder to detect by standard anti-cheat systems.",
     icon: Shield

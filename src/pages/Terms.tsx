@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowLeft, ShieldAlert, Scale, ScrollText } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const Terms = () => {
   return (
@@ -40,8 +41,17 @@ const Terms = () => {
 
             <section>
               <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2 uppercase tracking-widest text-xs opacity-60">
+                02. Conduct and Purpose
+              </h2>
+              <p>
+                Nexus and its associated contributors do not endorse or support any form of cheating, unlawful activity, or malicious conduct. The software is developed and distributed solely for educational, analytical, and research purposes in the field of process interaction and external rendering.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2 uppercase tracking-widest text-xs opacity-60">
                 <ShieldAlert size={16} />
-                02. Assumption of Risk
+                03. Assumption of Risk
               </h2>
               <p className="border-l-2 border-red-500/20 pl-6 bg-red-500/[0.02] py-4 rounded-r-xl">
                 The use of external software in online gaming environments carries inherent risks. Nexus is provided for educational and research purposes. You acknowledge that using this software may violate third-party end-user license agreements and may lead to account restrictions or permanent bans. You assume all responsibility and risk for your use of the software.
@@ -50,7 +60,7 @@ const Terms = () => {
 
             <section>
               <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2 uppercase tracking-widest text-xs opacity-60">
-                03. No Warranty
+                04. No Warranty
               </h2>
               <p>
                 NEXUS IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED. WE DO NOT GUARANTEE THAT THE SOFTWARE WILL BE UNDETECTED, ERROR-FREE, OR UNINTERRUPTED. WE ARE NOT RESPONSIBLE FOR ANY LOSS OF DATA, SYSTEM DAMAGE, OR ACCOUNT BANNERS RESULTING FROM YOUR USE.
@@ -59,7 +69,16 @@ const Terms = () => {
 
             <section>
               <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2 uppercase tracking-widest text-xs opacity-60">
-                04. License to Use
+                05. No Affiliation
+              </h2>
+              <p>
+                Nexus is a third-party project. We are not affiliated with, associated with, authorized by, endorsed by, or in any way officially connected with Roblox Corporation, or any of its subsidiaries or affiliates. All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-xl font-bold text-foreground mb-4 flex items-center gap-2 uppercase tracking-widest text-xs opacity-60">
+                06. License and Restrictions
               </h2>
               <p>
                 We grant you a non-exclusive, non-transferable license to use Nexus for your personal, non-commercial use only. You may not reverse engineer, redistribute, or resell the software.
@@ -74,6 +93,7 @@ const Terms = () => {
           </div>
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 };

@@ -1,37 +1,22 @@
 import { motion } from "framer-motion";
-import { Eye, Crosshair, Bone, Save, Settings, Target, Shield, RefreshCw } from "lucide-react";
+import { Eye, Crosshair, Save, Shield, RefreshCw, Zap } from "lucide-react";
 
 const features = [
-  { icon: Eye, title: "Full ESP Suite", desc: "Box, Name, Health, Distance, Tracers & Skeleton rendering" },
-  { icon: Crosshair, title: "Advanced Aimbot", desc: "FOV Circle with custom smoothing for natural aim" },
-  { icon: Target, title: "Bone Selection", desc: "Target Head, Torso, or custom bone for precision" },
-  { icon: Save, title: "Config System", desc: "Save, Load & Auto-save your perfect settings" },
-  { icon: Settings, title: "ImGui Menu", desc: "Beautiful overlay menu with INSERT toggle" },
-  { icon: Bone, title: "Skeleton ESP", desc: "Full bone structure rendering with distance fade" },
-  { icon: Shield, title: "Undetected", desc: "Built with external overlay for maximum security" },
-  { icon: RefreshCw, title: "Updated Frequently", desc: "Constant improvements and security patches" },
+  { icon: Crosshair, title: "Combat", desc: "Advanced Silent Aimbot with custom smoothing and specialized bone targeting." },
+  { icon: Eye, title: "Visuals", desc: "High-performance ESP suite including Skeleton, Box, Health, and Distance." },
+  { icon: Shield, title: "Undetected", desc: "Built as a 100% external overlay for maximum security and peace of mind." },
+  { icon: RefreshCw, title: "Updated Frequently", desc: "Constant improvements and security patches to stay ahead of the curve." },
+  { icon: Save, title: "Config System", desc: "Seamlesslly save and load your custom settings for any game scenario." },
+  { icon: Zap, title: "Misc", desc: "A collection of specialized utilities and experimental modules designed for a custom, optimized experience." },
 ];
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="relative py-32 px-4">
+    <section id="features" className="relative py-24 px-4 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-transparent" />
       
       <div className="max-w-6xl mx-auto relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">Features</h2>
-          <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Every tool you need, built with precision and performance in mind.
-          </p>
-        </motion.div>
-        
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f, i) => (
             <motion.div
               key={f.title}
@@ -39,10 +24,10 @@ const FeaturesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.07 }}
-              className="glass-card p-6 group hover:border-primary/40 transition-all duration-300"
+              className="glass-card p-8 group hover:border-primary/40 transition-all duration-300"
             >
-              <f.icon className="w-8 h-8 text-primary mb-4 group-hover:drop-shadow-[0_0_8px_hsl(270,91%,65%)] transition-all duration-300" />
-              <h3 className="font-semibold text-foreground mb-2">{f.title}</h3>
+              <f.icon className="w-8 h-8 text-primary mb-5 group-hover:drop-shadow-[0_0_8px_hsl(var(--primary))] transition-all duration-300" />
+              <h3 className="text-xl font-bold text-foreground mb-3 tracking-tight">{f.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
             </motion.div>
           ))}
