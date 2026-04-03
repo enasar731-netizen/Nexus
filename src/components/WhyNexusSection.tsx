@@ -9,7 +9,7 @@ const reasons = [
 
 const WhyNexusSection = () => {
   return (
-    <section className="relative py-32 px-4">
+    <section id="why-nexus" className="relative py-32 px-4">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-accent/[0.02] to-transparent" />
       
       <div className="max-w-4xl mx-auto relative z-10">

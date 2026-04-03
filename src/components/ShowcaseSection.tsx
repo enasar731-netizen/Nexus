@@ -4,7 +4,7 @@ import menuImg from "@/assets/showcase-menu.jpg";
 
 const ShowcaseSection = () => {
   return (
-    <section className="relative py-32 px-4">
+    <section id="showcase" className="relative py-32 px-4">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

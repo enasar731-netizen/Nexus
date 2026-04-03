@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Eye, Crosshair, Bone, Save, Settings, Target } from "lucide-react";
+import { Eye, Crosshair, Bone, Save, Settings, Target, Shield, RefreshCw } from "lucide-react";
 
 const features = [
   { icon: Eye, title: "Full ESP Suite", desc: "Box, Name, Health, Distance, Tracers & Skeleton rendering" },
@@ -8,11 +8,13 @@ const features = [
   { icon: Save, title: "Config System", desc: "Save, Load & Auto-save your perfect settings" },
   { icon: Settings, title: "ImGui Menu", desc: "Beautiful overlay menu with INSERT toggle" },
   { icon: Bone, title: "Skeleton ESP", desc: "Full bone structure rendering with distance fade" },
+  { icon: Shield, title: "Undetected", desc: "Built with external overlay for maximum security" },
+  { icon: RefreshCw, title: "Updated Frequently", desc: "Constant improvements and security patches" },
 ];
 
 const FeaturesSection = () => {
   return (
-    <section className="relative py-32 px-4">
+    <section id="features" className="relative py-32 px-4">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/[0.02] to-transparent" />
       
       <div className="max-w-6xl mx-auto relative z-10">
