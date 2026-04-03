@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Download, Shield, Cpu, Zap, Box, Key } from "lucide-react";
+import { Download, Shield, Cpu, Zap, Box } from "lucide-react";
 import SetupGuide from "./SetupGuide";
 
 const HeroSection = () => {
@@ -33,16 +33,11 @@ const HeroSection = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          transition={{ duration: 0.8, delay: 0.1 }}
         >
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
-            <Key className="w-3 h-3" />
-            Status: Private Beta (Key Required)
-          </div>
-          <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-6 text-gradient">
+          <h1 className="text-6xl sm:text-7xl md:text-9xl font-black tracking-tighter text-gradient mb-4">
             NEXUS
           </h1>
         </motion.div>
@@ -70,34 +65,31 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-             <a 
-              href="/test.zip" 
-              download
-              onClick={handleDownload}
-              className="px-8 py-4 bg-primary text-primary-foreground font-bold rounded-full hover:scale-105 transition-all duration-300 hover:shadow-[0_0_30px_rgba(155,135,245,0.6)] flex items-center gap-2 group"
-             >
-                <Download className="w-5 h-5 group-hover:translate-y-0.5 transition-transform" />
-                Download Beta
-             </a>
-             <button 
-              onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-8 py-4 bg-white/5 border border-white/10 text-foreground font-bold rounded-full hover:bg-white/10 transition-all duration-300 backdrop-blur-md"
-             >
-                Explore Features
-             </button>
+          <div className="flex flex-col items-center gap-6 mb-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+               <button 
+                className="px-8 py-4 bg-primary/20 text-primary font-bold rounded-full cursor-not-allowed border border-primary/30 flex items-center gap-2 opacity-80"
+               >
+                  <Download className="w-5 h-5 opacity-50" />
+                  Coming Soon
+               </button>
+               <button 
+                onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-4 bg-white/5 border border-white/10 text-foreground font-bold rounded-full hover:bg-white/10 transition-all duration-300 backdrop-blur-md"
+               >
+                  Explore Features
+               </button>
+            </div>
+            
+            <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-muted-foreground opacity-50">
+               Currently Invite Only
+            </span>
           </div>
           
-          <div className="flex flex-col items-center gap-6 mt-4">
-            <p className="text-xs text-muted-foreground/60 tracking-wider uppercase font-medium">
-              * Authentication Key required for activation
-            </p>
-            
-            <div className="flex items-center justify-center gap-6 text-muted-foreground text-sm">
-              <span className="flex items-center gap-1.5"><Shield className="w-3.5 h-3.5 text-primary" /> Undetected</span>
-              <span className="flex items-center gap-1.5"><Cpu className="w-3.5 h-3.5 text-primary" /> External</span>
-              <span className="flex items-center gap-1.5"><Zap className="w-3.5 h-3.5 text-primary" /> Performance</span>
-            </div>
+          <div className="flex items-center justify-center gap-6 text-muted-foreground text-sm">
+            <span className="flex items-center gap-1.5"><Shield className="w-3.5 h-3.5 text-primary" /> Undetected</span>
+            <span className="flex items-center gap-1.5"><Cpu className="w-3.5 h-3.5 text-primary" /> External</span>
+            <span className="flex items-center gap-1.5"><Zap className="w-3.5 h-3.5 text-primary" /> Performance</span>
           </div>
         </motion.div>
       </div>

@@ -33,6 +33,11 @@ const faqs = [
     answer: "Nexus is highly optimized for performance. Our external rendering engine is designed to have a near-zero impact on your game's frame rate, ensuring a smooth experience even on mid-range hardware.",
     icon: Cpu
   },
+  {
+    question: "Will Nexus ever become public?",
+    answer: "We are actively working on finalizing the initial release. Once we achieve our stability and security goals, we will open the project to a wider audience.",
+    icon: HelpCircle
+  },
 ];
 
 const FAQItem = ({ question, answer, icon: Icon, index }: any) => {
