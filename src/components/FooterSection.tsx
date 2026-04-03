@@ -15,14 +15,16 @@ const FooterSection = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-6">Ready to Dominate?</h2>
           
-          <span className="glow-button text-lg inline-flex items-center gap-2 opacity-70 cursor-not-allowed mb-8">
-            Coming Soon
-          </span>
-          
-          <a href="#" className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
-            <MessageCircle className="w-4 h-4" />
-            Join our Discord
-          </a>
+          <div className="flex flex-col items-center gap-6">
+            <span className="glow-button text-lg inline-flex items-center gap-2 opacity-70 cursor-not-allowed">
+              Coming Soon
+            </span>
+            
+            <a href="#" className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm">
+              <MessageCircle className="w-4 h-4" />
+              Join our Discord
+            </a>
+          </div>
         </motion.div>
       </div>
       
