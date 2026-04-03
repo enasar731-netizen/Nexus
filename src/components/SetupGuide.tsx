@@ -14,8 +14,8 @@ const steps = [
   },
   { 
     icon: Play, 
-    title: "Launch Preferred Game", 
-    desc: "Start your target game and ensure it is running in Windowed or Borderless mode." 
+    title: "Launch Roblox", 
+    desc: "Open the Roblox client and join any game." 
   },
   { 
     icon: Key, 
@@ -58,8 +58,7 @@ const SetupGuide = ({ isOpen, onClose }: SetupGuideProps) => {
               <p className="text-muted-foreground">Follow these steps carefully to ensure a seamless setup experience.</p>
             </div>
             
-            <div className="space-y-8 relative">
-              <div className="absolute left-6 top-8 bottom-8 w-0.5 bg-primary/10 -z-10" />
+            <div className="space-y-8">
               
               {steps.map((step, i) => (
                 <motion.div 
@@ -67,7 +66,7 @@ const SetupGuide = ({ isOpen, onClose }: SetupGuideProps) => {
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.1 + 0.2 }}
-                  className="flex gap-6 items-start"
+                  className="flex gap-6 items-center"
                 >
                   <div className="w-12 h-12 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0 shadow-[0_0_15px_rgba(var(--primary),0.1)]">
                     <step.icon className="w-5 h-5 text-primary" />
