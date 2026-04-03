@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Eye, Crosshair, Bone, Save, Rabbit, Settings, Gauge, Target } from "lucide-react";
+import { Eye, Crosshair, Bone, Save, Settings, Target } from "lucide-react";
 
 const features = [
   { icon: Eye, title: "Full ESP Suite", desc: "Box, Name, Health, Distance, Tracers & Skeleton rendering" },
