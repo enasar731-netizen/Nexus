@@ -20,17 +20,6 @@ const HeroSection = () => {
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 rounded-full bg-accent/10 blur-[100px] animate-pulse-glow" style={{ animationDelay: "1.5s" }} />
       
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex justify-center mb-6"
-        >
-          <div className="flex items-center gap-2 px-3 py-1 bg-primary/5 border border-primary/20 rounded-full text-[10px] font-mono tracking-widest uppercase text-muted-foreground/60 backdrop-blur-md">
-            <Shield className="w-3 h-3 text-primary/40" />
-            Research & Educational Utility Only
-          </div>
-        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -48,7 +37,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl md:text-2xl text-muted-foreground font-light tracking-wide mb-4"
         >
-          Premium Roblox External Overlay
+          Premium External Overlay
         </motion.p>
         
         <motion.p
@@ -81,6 +70,9 @@ const HeroSection = () => {
                </button>
             </div>
             
+            <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-muted-foreground opacity-50">
+               Research & Educational Utility Only
+            </span>
             <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-muted-foreground opacity-50">
                Currently Invite Only
             </span>

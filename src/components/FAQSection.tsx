@@ -35,7 +35,11 @@ const faqs = [
   },
   {
     question: "Will Nexus ever become public?",
-    answer: "We are actively working on finalizing the initial release. Once we achieve our stability and security goals, we will open the project to a wider audience.",
+    answer: (
+      <>
+        Nexus is currently in a private testing phase. While we plan to open to a wider audience in the future, it is currently invite-only. You can <a href="https://discord.gg/sWqkEANm9q" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">join our Discord</a> to apply for an invite or for more information.
+      </>
+    ),
     icon: HelpCircle
   },
 ];
