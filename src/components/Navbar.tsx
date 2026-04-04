@@ -14,6 +14,18 @@ const Navbar = () => {
   const [active, setActive] = useState<string>("Features");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [isMobileMenuOpen]);
+
   useEffect(() => {
     const onScroll = () => {
       const scrollPos = window.scrollY + 150;

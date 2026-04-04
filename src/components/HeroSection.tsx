@@ -26,7 +26,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
         >
-          <h1 className="text-6xl sm:text-7xl md:text-9xl font-black tracking-tighter text-gradient mb-4">
+          <h1 className="text-5xl sm:text-7xl md:text-9xl font-black tracking-tighter text-gradient mb-4">
             NEXUS
           </h1>
         </motion.div>
@@ -55,16 +55,16 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
         >
           <div className="flex flex-col items-center gap-6 mb-8">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full px-4 sm:px-0">
                <button 
-                className="px-8 py-4 bg-primary/20 text-primary font-bold rounded-full cursor-not-allowed border border-primary/30 flex items-center gap-2 opacity-80"
+                className="w-full sm:w-auto px-8 py-4 bg-primary/20 text-primary font-bold rounded-full cursor-not-allowed border border-primary/30 flex items-center justify-center gap-2 opacity-80"
                >
                   <Download className="w-5 h-5 opacity-50" />
                   Coming Soon
                </button>
                <button 
                 onClick={() => document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-8 py-4 bg-white/5 border border-white/10 text-foreground font-bold rounded-full hover:bg-white/10 transition-all duration-300 backdrop-blur-md"
+                className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-foreground font-bold rounded-full hover:bg-white/10 transition-all duration-300 backdrop-blur-md"
                >
                   Explore Features
                </button>
